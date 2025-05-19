@@ -21,6 +21,9 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
       localStorage.setItem('token', data.token); // guardar el token
       document.getElementById('loginMensaje').textContent = '¡Login exitoso!';
       // Redirigir o mostrar contenido, según tu app
+      setTimeout(() => {
+      window.location.href = 'menu.html'; // Redirige al menú
+      }, 1000);
     } else {
       document.getElementById('loginMensaje').textContent = data.error || 'Error al iniciar sesión';
     }

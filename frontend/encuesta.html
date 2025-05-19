@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Encuesta Huella de Carbono</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    #pregunta {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .respuesta {
+      display: block;
+      margin: 0.5rem 0;
+      padding: 0.7rem;
+      background-color: #eee;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .respuesta:hover {
+      background-color: #ddd;
+    }
+    #backBtn, #finalizarBtn {
+      margin-top: 2rem;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      display: none;
+    }
+    #backBtn {
+      background-color: #f44336;
+      margin-right: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="encuestaContenedor">
+    <div id="pregunta"></div>
+    <div id="respuestas"></div>
+
+    <button id="backBtn">Atrás</button>
+    <button id="finalizarBtn">Finalizar Encuesta</button>
+  </div>
+
+  <script src="encuesta.js"></script>
+</body>
+</html>
