@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.pregunta {
+  margin-bottom: 20px;
+}
+
+.mensaje {
+  margin-top: 20px;
+  color: green;
+}

@@ -5,12 +5,11 @@ CREATE TABLE usuarios (
   contraseña TEXT NOT NULL
 );
 
-CREATE TABLE consumos (
+CREATE TABLE respuestas (
   id SERIAL PRIMARY KEY,
-  tipo TEXT NOT NULL, -- ej: transporte, electricidad, alimentación
-  descripcion TEXT,
-  valor NUMERIC NOT NULL, -- valor numérico, por ejemplo litros o kWh
-  unidad TEXT NOT NULL, -- por ejemplo km, kg, kWh
-  fecha TIMESTAMP DEFAULT NOW(),
-  id_usuario INT REFERENCES usuarios(id)
+  id_usuario INT REFERENCES usuarios(id),
+  pregunta TEXT NOT NULL,
+  respuesta TEXT NOT NULL,
+  fecha TIMESTAMP DEFAULT NOW()
 );
+

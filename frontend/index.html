@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="loginSeccion">
+  <h2>Iniciar sesión</h2>
+  <form id="loginForm">
+    <input type="text" id="email" placeholder="Email" required>
+    <input type="password" id="contraseña" placeholder="Contraseña" required>
+    <button type="submit">Ingresar</button>
+  </form>
+  <p id="loginMensaje"></p>
+</section>
+
+  <h1>Encuesta de Huella de Carbono</h1>
+
+  <div class="pregunta">
+    <label for="pregunta1">¿Cuántos km recorres en auto a la semana?</label>
+    <input type="number" id="pregunta1" />
+  </div>
+
+  <button id="enviarRespuesta" onclick="enviarRespuesta()">Enviar respuesta</button>
+  <div id="mensaje" class="mensaje"></div>
+
+  <script src="main.js"></script>
+  <script src="login.js"></script>
+
+</body>
+</html>
