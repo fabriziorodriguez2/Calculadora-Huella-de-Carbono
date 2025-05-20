@@ -1,3 +1,5 @@
+const API_URL= "https://calculadora-huella-de-carbono-1.onrender.com";
+
 document.getElementById('registroForm').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -6,7 +8,7 @@ document.getElementById('registroForm').addEventListener('submit', async (e) => 
   const contraseña = document.getElementById('contraseña').value;
 
   try {
-    const res = await fetch('http://localhost:3000/api/register', {
+    const res = await fetch(`${API_URL}/api/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ nombre, email, contraseña })
