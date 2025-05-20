@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -11,6 +12,8 @@ const respuestasRoutes = require('./routes/respuestas.routes');
 
 app.use('/api', authRoutes);
 app.use('/api', respuestasRoutes);
+
+app.use(express.static(path.join(__dirname, 'frontend')));
 
 app.get('/', (req, res) => {
   res.send('API de Huella de Carbono funcionando');
