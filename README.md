@@ -31,8 +31,8 @@ Calculadora web para estimar la huella de carbono personal, con sistema de regis
 
 ## URL de la Aplicación
 
-- Frontend: [https://tu-frontend.onrender.com](https://calculadora-huella-de-carbono-1.onrender.com)
-- Backend API: [https://tu-backend.onrender.com/api](https://calculadora-huella-de-carbono.onrender.com)
+- Frontend: [aqui](https://calculadora-huella-de-carbono-1.onrender.com)
+- Backend API: [aqui](https://calculadora-huella-de-carbono.onrender.com)
 
 ## Desafíos y Aprendizajes
 
@@ -45,8 +45,8 @@ Calculadora web para estimar la huella de carbono personal, con sistema de regis
 
 - **Nombre:** Fabrizio Rodriguez  
 - **Email:** fabrizio.rodriguez7274@gmail.com 
-- **GitHub:** [https://github.com/tu-usuario](https://github.com/fabriziorodriguez2)  
-- **LinkedIn:** [https://linkedin.com/in/tu-perfil](https://www.linkedin.com/in/fabrizio-agust%C3%ADn-rodr%C3%ADguez-suna-598771172/)
+- **GitHub:** [aqui](https://github.com/fabriziorodriguez2)  
+- **LinkedIn:** [aqui](https://www.linkedin.com/in/fabrizio-agust%C3%ADn-rodr%C3%ADguez-suna-598771172/)
 
 ---
 
