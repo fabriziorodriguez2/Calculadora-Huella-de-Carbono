@@ -1,7 +1,7 @@
 // Suponemos que el nombre del usuario está guardado en localStorage después del login
 window.onload = () => {
   const nombre = localStorage.getItem('nombreUsuario') || 'Usuario';
-  document.getElementById('nombreUsuario').textContent = nombre;
+  document.getElementById('nombreUsuario').textContent = `Bienvenido, ${nombre}`;
 };
 
 document.getElementById('iniciarEncuesta').addEventListener('click', () => {

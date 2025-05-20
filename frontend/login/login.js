@@ -4,7 +4,7 @@ window.onload = () => {
 
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
   e.preventDefault();
-  
+
   const email = document.getElementById('email').value;
   const contraseña = document.getElementById('contraseña').value;
 
@@ -19,6 +19,8 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
 
     if (res.ok) {
       localStorage.setItem('token', data.token); // guardar el token
+      localStorage.setItem('nombreUsuario', data.nombre); // Agregá esto
+      console.log(localStorage.getItem('nombreUsuario')); // Verifica que se guarde correctamente
       document.getElementById('loginMensaje').textContent = '¡Login exitoso!';
       // Redirigir o mostrar contenido, según tu app
       setTimeout(() => {

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menú Principal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .menu-container {
+      background-color: #ffffff;
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-container:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 10px;
+      border: none;
+      background-color: #66bb6a;
+      color: white;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #43a047;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <h1 id="nombreUsuario"></h1>
+    <button id="iniciarEncuesta">Iniciar Encuesta de Huella de Carbono</button>
+  </div>
+
+  <script src="menu.js"></script>
+
+</body>
+</html>

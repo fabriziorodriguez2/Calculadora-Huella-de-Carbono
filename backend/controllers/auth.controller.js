@@ -44,7 +44,7 @@ exports.login = async (req, res) => {
     const secretKey = 'supersecreto123';
     const token = jwt.sign(payload, secretKey);
 
-    res.json({ mensaje: 'Login correcto', token});
+    res.json({ mensaje: 'Login correcto', token, nombre: user.nombre });
 
   } catch (error) {
     console.error(error);

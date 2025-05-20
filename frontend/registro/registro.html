@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Usuario</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .titulo {
+      margin-bottom: 50px;
+      font-size: 4rem;
+      color: #4caf50;
+      text-align: center;
+      transition: color 0.5s ease;
+    }
+
+    .titulo:hover {
+      color: #248627;
+    }
+
+    .registro-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .registro-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #080000;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .registro-btn {
+      width: 100%;
+      padding: 0.7rem;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .registro-btn:hover {
+      background: #45a049;
+    }
+
+    .link-login {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .link-login a {
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-login a:hover {
+      text-decoration: underline;
+    }
+
+    #registroMensaje {
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #555;
+      min-height: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <h1 class="titulo">Calcula tu <b>Huella de Carbono</b></h1>
+
+    <div class="registro-container">
+      <h2>Crear cuenta</h2>
+      <form id="registroForm">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Ingresa tu email" />
+        </div>
+
+        <div class="form-group">
+          <label for="contraseña">Contraseña</label>
+          <input type="password" id="contraseña" placeholder="Ingresa una contraseña" />
+        </div>
+
+        <button type="submit" class="registro-btn">Registrarse</button>
+      </form>
+
+      <p id="registroMensaje"></p>
+
+      <div class="link-login">
+        ¿Ya tenés una cuenta? <a href="login.html">Iniciar sesión</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="registro.js"></script>
+</body>
+</html>

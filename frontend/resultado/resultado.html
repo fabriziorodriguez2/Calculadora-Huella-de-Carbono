@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultado de tu Huella de Carbono</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+    color: #28a745;
+}
+
+#resultadoContenedor {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#consumoMensual {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+#zonaResultado {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul#recomendaciones {
+  list-style: disc inside;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+ul#recomendaciones li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+
+button {
+  display: flex;
+  margin: auto;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.botonera {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Espacio entre botones */
+  margin-top: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  <div id="resultadoContenedor">
+    <h1>Tu Huella de Carbono</h1>
+    <h2 id="consumoMensual"></h2>
+    <div id="zonaResultado"></div>
+    <h3>Recomendaciones:</h3>
+    <ul id="recomendaciones"></ul>
+    <div class="botonera">
+    <button onclick="location.href='encuesta.html'">Volver a la Encuesta</button>
+    <button onclick="location.href='menu.html'">Volver al menú</button>
+    </div>
+  </div>
+
+  <script src="resultado.js"></script>
+</body>
+</html>
