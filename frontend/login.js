@@ -1,4 +1,4 @@
-const API_URL= "https://calculadora-huella-de-carbono-1.onrender.com";
+const API_URL= "https://calculadora-huella-de-carbono.onrender.com";
 
 window.onload = () => {
   localStorage.removeItem("token");
