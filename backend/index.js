@@ -16,6 +16,8 @@ app.get('/', (req, res) => {
   res.send('API de Huella de Carbono funcionando');
 });
 
-app.listen(process.env.PORT,'0.0.0.0', () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT,'0.0.0.0', () => {
   console.log(`Servidor corriendo en puerto ${process.env.PORT}`);
 });
