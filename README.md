@@ -3,7 +3,9 @@
 ## Resumen del Proyecto
 
 Calculadora web para estimar la huella de carbono personal, con sistema de registro y login de usuarios, almacenamiento seguro de datos y despliegue en la nube. Proyecto desarrollado usando tecnologías modernas y prácticas recomendadas de desarrollo web y backend.
+
 ![image](https://github.com/user-attachments/assets/6f0339ed-6125-41f1-8c43-97a1d2274323)
+![image](https://github.com/user-attachments/assets/c3ba2a67-69dd-488d-97d8-cd4ec6c49e6c)
 
 
 ## Tecnologías Utilizadas
