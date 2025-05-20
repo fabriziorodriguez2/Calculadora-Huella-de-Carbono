@@ -5,7 +5,7 @@ const preguntas = [
 
   // Transporte
   { seccion: "Transporte", texto: "¿Con qué frecuencia usás el auto?", opciones: ["Nunca", "Ocasionalmente", "Diariamente"] },
-  { seccion: "Transporte", texto: "¿Utilizás transporte público?", opciones: ["Sí", "No"] },
+  { seccion: "Transporte", texto: "¿Utilizás transporte público?", opciones: ["Sí", "No", "Ocasionalmente"] },
 
   // Alimentación
   { seccion: "Alimentación", texto: "¿Consumís carne roja?", opciones: ["Diariamente", "1-2 veces por semana", "Nunca"] },

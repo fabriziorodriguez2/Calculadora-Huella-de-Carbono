@@ -1,22 +1,27 @@
+// Recupera las respuestas del almacenamiento local (o un array vacío si no hay nada)
 const respuestas = JSON.parse(localStorage.getItem("respuestasHuella") || "[]");
 
+// Referencias a los elementos HTML donde se mostrará la información
 const consumoMensual = document.getElementById("consumoMensual");
 const zonaResultado = document.getElementById("zonaResultado");
 const recomendaciones = document.getElementById("recomendaciones");
+const comparativa = document.getElementById("comparativa");
+const promedioMundial = 333; 
+const promedioRecomendado = 160;
 
 // Puntaje estimado por respuesta
 const puntajes = {
   // Vivienda y Energía
   "1": 80, "2": 70, "3": 60, "4+": 50,
-  "Gas": 60, "Electricidad": 50, "Leña": 90, "Ninguna": 30,
+  "Gas": 60, "Electricidad": 50, "Leña": 90, "Ninguna": 0,
 
   // Transporte
   "Nunca": 0, "Ocasionalmente": 50, "Diariamente": 150,
-  "Sí": 30, "No": 80,
+  "Sí": 50, "No": 80, "Ocasionalmente": 25,
 
   // Alimentación
   "Diariamente": 120, "1-2 veces por semana": 60, "Nunca": 20,
-  "Sí": 30, "No": 70,
+  "Sí": 20, "No": 50,
 
   // Residuos
   "A veces": 40,
@@ -37,7 +42,7 @@ let mensaje = "";
 if (total < 200) {
   zona = "Verde";
   color = "#2e7d32";
-  mensaje = "¡Excelente! Tu huella está por debajo del promedio nacional.";
+  mensaje = "¡Excelente! Tu huella está por debajo del promedio mudnial.";
 } else if (total < 350) {
   zona = "Amarilla";
   color = "#fbc02d";
@@ -53,6 +58,9 @@ if (total < 200) {
 }
 
 zonaResultado.innerHTML = `<h2 style="color:${color};">Zona ${zona}</h2><p>${mensaje}</p>`;
+
+comparativa.innerHTML = `<p>Promedio mundial: ${promedioMundial} kg CO₂/mes</p>
+<p>Promedio esperado por la ONU para 2030 : ${promedioRecomendado} kg CO₂/mes</p>`;
 
 // Recomendaciones simples
 if (respuestas.includes("Diariamente") && respuestas.includes("Carne roja")) {
